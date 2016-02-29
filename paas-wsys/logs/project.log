@@ -1,0 +1,385 @@
+2016-02-28 19:10:57  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-28 19:10:57  [ main:0 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-28 19:10:57  [ main:0 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-28 19:10:57  [ main:16 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-28 19:10:57  [ main:16 ] - [ INFO ]  begin initialization Server ......
+2016-02-28 19:10:57  [ main:31 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-28 19:10:57  [ main:31 ] - [ INFO ]   initialization app-root '/paas-wsys=src/main/webapp' ...... 
+2016-02-28 19:10:57  [ main:63 ] - [ INFO ]  begin start server ......
+2016-02-28 19:10:57  [ main:63 ] - [ INFO ]  jetty-6.1.26
+2016-02-28 19:10:57  [ main:516 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-28 19:10:57  [ main:516 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-28 19:10:57  [ main:548 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sun Feb 28 19:10:57 CST 2016]; root of context hierarchy
+2016-02-28 19:10:57  [ main:579 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-28 19:10:58  [ main:648 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-28 19:10:58  [ main:701 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-28 19:10:58  [ main:737 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-28 19:10:58  [ main:753 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-28 19:10:58  [ main:784 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-28 19:10:58  [ main:817 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-28 19:10:58  [ main:848 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-28 19:10:58  [ main:917 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-wsys.xml]
+2016-02-28 19:10:58  [ main:933 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-28 19:10:58  [ main:1033 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-28 19:10:58  [ main:1064 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7424206b: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_MerchentSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRoleSvc,DubboxRest_SysOpSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.PaasSsoUserLoginListener#0,com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0,com.aic.paas.cdev.peer.impl.PcProjectPeerImpl#0,com.aic.paas.cdev.peer.impl.VcMntRepositoryApplyPeerImpl#0,com.aic.paas.cdev.peer.impl.PcCompRoomPeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-28 19:10:58  [ main:1198 ] - [ INFO ]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7424206b: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_MerchentSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRoleSvc,DubboxRest_SysOpSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.PaasSsoUserLoginListener#0,com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0,com.aic.paas.cdev.peer.impl.PcProjectPeerImpl#0,com.aic.paas.cdev.peer.impl.VcMntRepositoryApplyPeerImpl#0,com.aic.paas.cdev.peer.impl.PcCompRoomPeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-28 19:10:58  [ main:1200 ] - [ ERROR ]  Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.binary.sso.client.auth.SsoClientAuthMvc#0' defined in class path resource [spring/spring-sso-client.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener#0': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.aic.paas.frame.cross.peer.SysFramePeer com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener.sysFramePeer; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.aic.paas.cdev.peer.impl.PcProductPeerImpl] for bean with name 'com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0' defined in class path resource [spring/spring-paas-wsys.xml]; nested exception is java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:605)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:472)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440)
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at com.binary.application.jetty.JettyServer.start(JettyServer.java:281)
+	at com.binary.application.jetty.JettyMain.main(JettyMain.java:12)
+	at com.aic.paas.wsys.test.TestWSysMain.main(TestWSysMain.java:11)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener#0': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.aic.paas.frame.cross.peer.SysFramePeer com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener.sysFramePeer; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.aic.paas.cdev.peer.impl.PcProductPeerImpl] for bean with name 'com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0' defined in class path resource [spring/spring-paas-wsys.xml]; nested exception is java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at com.binary.sso.client.auth.SsoClientAuthMvc.setApplicationContext(SsoClientAuthMvc.java:95)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:117)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:394)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1448)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 32 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.aic.paas.frame.cross.peer.SysFramePeer com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener.sysFramePeer; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.aic.paas.cdev.peer.impl.PcProductPeerImpl] for bean with name 'com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0' defined in class path resource [spring/spring-paas-wsys.xml]; nested exception is java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:513)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:92)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 46 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.aic.paas.cdev.peer.impl.PcProductPeerImpl] for bean with name 'com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0' defined in class path resource [spring/spring-paas-wsys.xml]; nested exception is java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1262)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1331)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:316)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:857)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:731)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:485)
+	... 48 more
+Caused by: java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.mortbay.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:401)
+	at org.mortbay.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:363)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:258)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:417)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1283)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1254)
+	... 57 more
+2016-02-28 19:10:58  [ main:1202 ] - [ ERROR ]  unavailable
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.binary.sso.client.auth.SsoClientAuthMvc#0' defined in class path resource [spring/spring-sso-client.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener#0': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.aic.paas.frame.cross.peer.SysFramePeer com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener.sysFramePeer; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.aic.paas.cdev.peer.impl.PcProductPeerImpl] for bean with name 'com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0' defined in class path resource [spring/spring-paas-wsys.xml]; nested exception is java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:605)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:472)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440)
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at com.binary.application.jetty.JettyServer.start(JettyServer.java:281)
+	at com.binary.application.jetty.JettyMain.main(JettyMain.java:12)
+	at com.aic.paas.wsys.test.TestWSysMain.main(TestWSysMain.java:11)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener#0': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.aic.paas.frame.cross.peer.SysFramePeer com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener.sysFramePeer; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.aic.paas.cdev.peer.impl.PcProductPeerImpl] for bean with name 'com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0' defined in class path resource [spring/spring-paas-wsys.xml]; nested exception is java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at com.binary.sso.client.auth.SsoClientAuthMvc.setApplicationContext(SsoClientAuthMvc.java:95)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:117)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:394)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1448)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 32 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.aic.paas.frame.cross.peer.SysFramePeer com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener.sysFramePeer; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.aic.paas.cdev.peer.impl.PcProductPeerImpl] for bean with name 'com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0' defined in class path resource [spring/spring-paas-wsys.xml]; nested exception is java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:513)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:92)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 46 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.aic.paas.cdev.peer.impl.PcProductPeerImpl] for bean with name 'com.aic.paas.cdev.peer.impl.PcProductPeerImpl#0' defined in class path resource [spring/spring-paas-wsys.xml]; nested exception is java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1262)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1331)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:316)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:857)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:731)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:485)
+	... 48 more
+Caused by: java.lang.ClassNotFoundException: com.aic.paas.cdev.peer.impl.PcProductPeerImpl
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.mortbay.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:401)
+	at org.mortbay.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:363)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:258)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:417)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1283)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1254)
+	... 57 more
+2016-02-28 19:10:58  [ main:1218 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16201
+2016-02-28 19:10:58  [ main:1218 ] - [ INFO ]  start server successful.
+2016-02-28 19:11:32  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-28 19:11:32  [ main:0 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-28 19:11:32  [ main:0 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-28 19:11:32  [ main:16 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-28 19:11:32  [ main:16 ] - [ INFO ]  begin initialization Server ......
+2016-02-28 19:11:32  [ main:32 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-28 19:11:32  [ main:32 ] - [ INFO ]   initialization app-root '/paas-wsys=src/main/webapp' ...... 
+2016-02-28 19:11:32  [ main:63 ] - [ INFO ]  begin start server ......
+2016-02-28 19:11:32  [ main:63 ] - [ INFO ]  jetty-6.1.26
+2016-02-28 19:11:32  [ main:517 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-28 19:11:32  [ main:517 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-28 19:11:32  [ main:533 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sun Feb 28 19:11:32 CST 2016]; root of context hierarchy
+2016-02-28 19:11:32  [ main:579 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-28 19:11:32  [ main:633 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-28 19:11:32  [ main:680 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-28 19:11:33  [ main:718 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-28 19:11:33  [ main:730 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-28 19:11:33  [ main:777 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-28 19:11:33  [ main:817 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-28 19:11:33  [ main:833 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-28 19:11:33  [ main:901 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-wsys.xml]
+2016-02-28 19:11:33  [ main:917 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-28 19:11:33  [ main:1033 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-28 19:11:33  [ main:1048 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f35a686: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_MerchentSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRoleSvc,DubboxRest_SysOpSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.PaasSsoUserLoginListener#0,dispatchMvc,mntUserMvc,com.aic.paas.wsys.peer.impl.MntUserPeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList] onto handler 'dropListMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList.*] onto handler 'dropListMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList/] onto handler 'dropListMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle] onto handler 'dropListMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle.*] onto handler 'dropListMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle/] onto handler 'dropListMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch] onto handler 'dropListMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch.*] onto handler 'dropListMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch/] onto handler 'dropListMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Root mapping to handler 'indexMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree] onto handler 'moduMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree.*] onto handler 'moduMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree/] onto handler 'moduMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById] onto handler 'moduMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById.*] onto handler 'moduMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById/] onto handler 'moduMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode] onto handler 'moduMvc'
+2016-02-28 19:11:33  [ main:1280 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode.*] onto handler 'moduMvc'
+2016-02-28 19:11:33  [ main:1296 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode/] onto handler 'moduMvc'
+2016-02-28 19:11:33  [ main:1296 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload] onto handler 'tmpFileMvc'
+2016-02-28 19:11:33  [ main:1297 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload.*] onto handler 'tmpFileMvc'
+2016-02-28 19:11:33  [ main:1297 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload/] onto handler 'tmpFileMvc'
+2016-02-28 19:11:33  [ main:1298 ] - [ INFO ]  Mapped URL path [/dispatch/mi/**] onto handler 'dispatchMvc'
+2016-02-28 19:11:33  [ main:1298 ] - [ INFO ]  Mapped URL path [/dispatch/mi/**.*] onto handler 'dispatchMvc'
+2016-02-28 19:11:33  [ main:1298 ] - [ INFO ]  Mapped URL path [/dispatch/mi/**/] onto handler 'dispatchMvc'
+2016-02-28 19:11:33  [ main:1299 ] - [ INFO ]  Mapped URL path [/dispatch/mc/**] onto handler 'dispatchMvc'
+2016-02-28 19:11:33  [ main:1299 ] - [ INFO ]  Mapped URL path [/dispatch/mc/**.*] onto handler 'dispatchMvc'
+2016-02-28 19:11:33  [ main:1299 ] - [ INFO ]  Mapped URL path [/dispatch/mc/**/] onto handler 'dispatchMvc'
+2016-02-28 19:11:33  [ main:1301 ] - [ INFO ]  Mapped URL path [/mnt/user/saveOrUpdateOp] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1301 ] - [ INFO ]  Mapped URL path [/mnt/user/saveOrUpdateOp.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1301 ] - [ INFO ]  Mapped URL path [/mnt/user/saveOrUpdateOp/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1301 ] - [ INFO ]  Mapped URL path [/mnt/user/setUserRoles] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1302 ] - [ INFO ]  Mapped URL path [/mnt/user/setUserRoles.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1302 ] - [ INFO ]  Mapped URL path [/mnt/user/setUserRoles/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1302 ] - [ INFO ]  Mapped URL path [/mnt/user/queryRoleAuthView] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1302 ] - [ INFO ]  Mapped URL path [/mnt/user/queryRoleAuthView.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1303 ] - [ INFO ]  Mapped URL path [/mnt/user/queryRoleAuthView/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1303 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpInfoPage] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1303 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpInfoPage.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1304 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpInfoPage/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1304 ] - [ INFO ]  Mapped URL path [/mnt/user/removeOpById] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1304 ] - [ INFO ]  Mapped URL path [/mnt/user/removeOpById.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1304 ] - [ INFO ]  Mapped URL path [/mnt/user/removeOpById/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1305 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpByIds] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1305 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpByIds.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1305 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpByIds/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1305 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpById] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1306 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpById.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1306 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpById/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1306 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpList] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1306 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpList.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1307 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpList/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1307 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpPage] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1307 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpPage.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1308 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpPage/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1308 ] - [ INFO ]  Mapped URL path [/mnt/user/querySysRoleDropList] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1308 ] - [ INFO ]  Mapped URL path [/mnt/user/querySysRoleDropList.*] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1308 ] - [ INFO ]  Mapped URL path [/mnt/user/querySysRoleDropList/] onto handler 'mntUserMvc'
+2016-02-28 19:11:33  [ main:1417 ] - [ INFO ]  FrameworkServlet 'spring': initialization completed in 900 ms
+2016-02-28 19:11:33  [ main:1439 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16201
+2016-02-28 19:11:33  [ main:1439 ] - [ INFO ]  start server successful.
+2016-02-28 19:20:10  [ main:0 ] - [ INFO ]  start jetty-server ......
+2016-02-28 19:20:10  [ main:0 ] - [ INFO ]  begin initialization QueuedThreadPool ......
+2016-02-28 19:20:10  [ main:0 ] - [ INFO ]  begin initialization SelectChannelConnector ......
+2016-02-28 19:20:10  [ main:16 ] - [ INFO ]  Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-02-28 19:20:10  [ main:16 ] - [ INFO ]  begin initialization Server ......
+2016-02-28 19:20:10  [ main:32 ] - [ INFO ]  begin initialization WebAppContext ......
+2016-02-28 19:20:10  [ main:32 ] - [ INFO ]   initialization app-root '/paas-wsys=src/main/webapp' ...... 
+2016-02-28 19:20:10  [ main:69 ] - [ INFO ]  begin start server ......
+2016-02-28 19:20:10  [ main:69 ] - [ INFO ]  jetty-6.1.26
+2016-02-28 19:20:10  [ main:541 ] - [ INFO ]  Initializing Spring FrameworkServlet 'spring'
+2016-02-28 19:20:10  [ main:541 ] - [ INFO ]  FrameworkServlet 'spring': initialization started
+2016-02-28 19:20:10  [ main:559 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sun Feb 28 19:20:10 CST 2016]; root of context hierarchy
+2016-02-28 19:20:11  [ main:594 ] - [ INFO ]  Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+2016-02-28 19:20:11  [ main:657 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-context.xml]
+2016-02-28 19:20:11  [ main:702 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-dubbo-client.xml]
+2016-02-28 19:20:11  [ main:742 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring-sso-client.xml]
+2016-02-28 19:20:11  [ main:756 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-sso-client.xml]
+2016-02-28 19:20:11  [ main:786 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-28 19:20:11  [ main:833 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-frame.xml]
+2016-02-28 19:20:11  [ main:849 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-28 19:20:11  [ main:902 ] - [ INFO ]  Loading XML bean definitions from class path resource [spring/spring-paas-wsys.xml]
+2016-02-28 19:20:11  [ main:933 ] - [ INFO ]  JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2016-02-28 19:20:11  [ main:1045 ] - [ INFO ]  Loading properties file from class path resource [project.properties]
+2016-02-28 19:20:11  [ main:1070 ] - [ INFO ]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@45a43fb8: defining beans [viewResolver,org.springframework.web.servlet.handler.SimpleMappingExceptionResolver#0,multipartResolver,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,com.binary.framework.util.FrameworkProperties#0,DubboRestClient_SYS,DubboxRest_SysFrameSvc,DubboxRest_MerchentSvc,DubboxRest_SysOpOrgSvc,DubboxRest_SysOpRoleSvc,DubboxRest_SysOrgSvc,DubboxRest_SysRoleSvc,DubboxRest_SysOpSvc,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.binary.sso.client.auth.SsoClientAuthMvc#0,com.aic.paas.frame.cross.integration.PaasWebSsoUserLoginListener#0,com.binary.sso.client.SsoClientConfiguration#0,dropListMvc,indexMvc,moduMvc,tmpFileMvc,treeListMvc,com.aic.paas.frame.cross.peer.impl.SysAuthResPeerImpl#0,com.aic.paas.frame.cross.peer.impl.SysFramePeerImpl#0,com.aic.paas.frame.util.SysFrameUtil#0,com.aic.paas.frame.cross.integration.PaasSsoUserLoginListener#0,dispatchMvc,mntUserMvc,com.aic.paas.wsys.peer.impl.MntUserPeerImpl#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2016-02-28 19:20:11  [ main:1280 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:20:11  [ main:1281 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:20:11  [ main:1281 ] - [ INFO ]  Mapped URL path [/sso/client/auth/ssoCallback/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:20:11  [ main:1281 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:20:11  [ main:1282 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:20:11  [ main:1282 ] - [ INFO ]  Mapped URL path [/sso/client/auth/notLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:20:11  [ main:1282 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:20:11  [ main:1282 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin.*] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:20:11  [ main:1283 ] - [ INFO ]  Mapped URL path [/sso/client/auth/verifyLogin/] onto handler 'com.binary.sso.client.auth.SsoClientAuthMvc#0'
+2016-02-28 19:20:11  [ main:1284 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle] onto handler 'dropListMvc'
+2016-02-28 19:20:11  [ main:1285 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle.*] onto handler 'dropListMvc'
+2016-02-28 19:20:11  [ main:1285 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatchSingle/] onto handler 'dropListMvc'
+2016-02-28 19:20:11  [ main:1285 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch] onto handler 'dropListMvc'
+2016-02-28 19:20:11  [ main:1286 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch.*] onto handler 'dropListMvc'
+2016-02-28 19:20:11  [ main:1286 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropListBatch/] onto handler 'dropListMvc'
+2016-02-28 19:20:11  [ main:1286 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList] onto handler 'dropListMvc'
+2016-02-28 19:20:11  [ main:1286 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList.*] onto handler 'dropListMvc'
+2016-02-28 19:20:11  [ main:1287 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/drop/getDropList/] onto handler 'dropListMvc'
+2016-02-28 19:20:11  [ main:1287 ] - [ INFO ]  Root mapping to handler 'indexMvc'
+2016-02-28 19:20:11  [ main:1288 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById] onto handler 'moduMvc'
+2016-02-28 19:20:11  [ main:1288 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById.*] onto handler 'moduMvc'
+2016-02-28 19:20:11  [ main:1289 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleById/] onto handler 'moduMvc'
+2016-02-28 19:20:11  [ main:1289 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode] onto handler 'moduMvc'
+2016-02-28 19:20:11  [ main:1289 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode.*] onto handler 'moduMvc'
+2016-02-28 19:20:11  [ main:1289 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/openModuleByCode/] onto handler 'moduMvc'
+2016-02-28 19:20:11  [ main:1290 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree] onto handler 'moduMvc'
+2016-02-28 19:20:11  [ main:1290 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree.*] onto handler 'moduMvc'
+2016-02-28 19:20:11  [ main:1290 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/modu/getMenuTree/] onto handler 'moduMvc'
+2016-02-28 19:20:11  [ main:1291 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload] onto handler 'tmpFileMvc'
+2016-02-28 19:20:11  [ main:1291 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload.*] onto handler 'tmpFileMvc'
+2016-02-28 19:20:11  [ main:1291 ] - [ INFO ]  Mapped URL path [/sys/frame/cross/tmpfile/upload/] onto handler 'tmpFileMvc'
+2016-02-28 19:20:11  [ main:1292 ] - [ INFO ]  Mapped URL path [/dispatch/mc/**] onto handler 'dispatchMvc'
+2016-02-28 19:20:11  [ main:1293 ] - [ INFO ]  Mapped URL path [/dispatch/mc/**.*] onto handler 'dispatchMvc'
+2016-02-28 19:20:11  [ main:1293 ] - [ INFO ]  Mapped URL path [/dispatch/mc/**/] onto handler 'dispatchMvc'
+2016-02-28 19:20:11  [ main:1293 ] - [ INFO ]  Mapped URL path [/dispatch/mi/**] onto handler 'dispatchMvc'
+2016-02-28 19:20:11  [ main:1294 ] - [ INFO ]  Mapped URL path [/dispatch/mi/**.*] onto handler 'dispatchMvc'
+2016-02-28 19:20:11  [ main:1294 ] - [ INFO ]  Mapped URL path [/dispatch/mi/**/] onto handler 'dispatchMvc'
+2016-02-28 19:20:11  [ main:1295 ] - [ INFO ]  Mapped URL path [/mnt/user/querySysRoleDropList] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1295 ] - [ INFO ]  Mapped URL path [/mnt/user/querySysRoleDropList.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1296 ] - [ INFO ]  Mapped URL path [/mnt/user/querySysRoleDropList/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1296 ] - [ INFO ]  Mapped URL path [/mnt/user/setUserRoles] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1296 ] - [ INFO ]  Mapped URL path [/mnt/user/setUserRoles.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1296 ] - [ INFO ]  Mapped URL path [/mnt/user/setUserRoles/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/mnt/user/saveOrUpdateOp] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/mnt/user/saveOrUpdateOp.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1297 ] - [ INFO ]  Mapped URL path [/mnt/user/saveOrUpdateOp/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1298 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpInfoPage] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1298 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpInfoPage.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1298 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpInfoPage/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1298 ] - [ INFO ]  Mapped URL path [/mnt/user/queryRoleAuthView] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1299 ] - [ INFO ]  Mapped URL path [/mnt/user/queryRoleAuthView.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1299 ] - [ INFO ]  Mapped URL path [/mnt/user/queryRoleAuthView/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1299 ] - [ INFO ]  Mapped URL path [/mnt/user/removeOpById] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1299 ] - [ INFO ]  Mapped URL path [/mnt/user/removeOpById.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1300 ] - [ INFO ]  Mapped URL path [/mnt/user/removeOpById/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1300 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpById] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1300 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpById.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1301 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpById/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1301 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpList] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1301 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpList.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1301 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpList/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1302 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpPage] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1302 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpPage.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1302 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpPage/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1302 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpByIds] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1303 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpByIds.*] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1303 ] - [ INFO ]  Mapped URL path [/mnt/user/queryOpByIds/] onto handler 'mntUserMvc'
+2016-02-28 19:20:11  [ main:1411 ] - [ INFO ]  FrameworkServlet 'spring': initialization completed in 870 ms
+2016-02-28 19:20:11  [ main:1429 ] - [ INFO ]  Started SelectChannelConnector@0.0.0.0:16201
+2016-02-28 19:20:11  [ main:1430 ] - [ INFO ]  start server successful.
+2016-02-28 19:20:53  [ 1056769629@qtp-1751502802-6:42856 ] - [ INFO ]   sys-frame refresh login ...... 
+2016-02-28 19:20:53  [ 1056769629@qtp-1751502802-6:42862 ] - [ INFO ]   sys-frame refresh login successful. 
