@@ -2,6 +2,7 @@ package com.aic.paas.wsys.peer.impl;
 
 import java.util.List;
 
+import org.apache.commons.lang.SystemUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.aic.paas.comm.util.SystemUtil;
@@ -85,7 +86,8 @@ public class MntUserPeerImpl implements MntUserPeer {
 		if(cdt == null) cdt = new CSysOp();
 		cdt.setOpKind(2);
 		cdt.setSuperUserFlag(0);
-		return merchentSvc.queryOpInfoPage(pageNum, pageSize, cdt, orders);
+		PaasWebSsoLoginUser user=(PaasWebSsoLoginUser)SystemUtil.getLoginUser();
+		return merchentSvc.queryOpInfoPage(pageNum, pageSize,user.getOrg().getAuthOrgId(),null,false, cdt, orders);
 	}
 
 
