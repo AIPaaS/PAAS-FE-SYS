@@ -87,7 +87,7 @@ public class MntUserPeerImpl implements MntUserPeer {
 		cdt.setOpKind(2);
 		cdt.setSuperUserFlag(0);
 		PaasWebSsoLoginUser user=(PaasWebSsoLoginUser)SystemUtil.getLoginUser();
-		return merchentSvc.queryOpInfoPage(pageNum, pageSize,user.getOrg().getAuthOrgId(),null,false, cdt, orders);
+		return merchentSvc.queryOpInfoPageByOrg(pageNum, pageSize,user.getOrg().getAuthOrgId(),null,false, cdt, orders);
 	}
 
 
