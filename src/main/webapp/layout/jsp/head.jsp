@@ -88,6 +88,7 @@ if(resList!=null && resList.size()>0) {
 
 <script src="<%=ContextPath%>/frame/js/util/CommonUtils.js"></script>
 <script src="<%=ContextPath%>/frame/js/util/json2.js"></script>
+<script src="<%=ContextPath%>/frame/js/util/Cookie.js"></script>
 <script src="<%=ContextPath%>/frame/js/util/RemoteService.js"></script>
 <script src="<%=ContextPath%>/frame/js/util/PageRequest.js"></script>
 <script src="<%=ContextPath%>/frame/js/util/ProjectUtils.js"></script>
@@ -117,6 +118,7 @@ if(resList!=null && resList.size()>0) {
 <script type="text/javascript">
 <%
 out.print("var ContextPath = '"+ContextPath+"';");
+out.print("var cookie = new Cookie();");
 out.print("var MODU = "+JSON.toString(modu)+";");		//当前模块对象
 out.print("var SU = {id:"+user.getId()+",userCode:\""+user.getUserCode()+"\",userName:\""+user.getUserName()+"\"};");		//登录用户
 out.print("var DROP = "+JSON.toString(dropmap)+";");
@@ -180,8 +182,63 @@ var CC = {
 		if(CU.isFunction(CC.BSMODEL_SHOWMSG_CALLBACK)) {
 			CC.BSMODEL_SHOWMSG_CALLBACK(t);
 		}
+	},
+	
+	
+	/**
+	 * 对外提供面包线点击事件
+	 * @param moduId 面包线对应模块ID
+	 * @param moduCode 面包线对应模块代码
+	 * @param url 指向跳转页面的URL
+	 * @return boolean||string false表示中断事件, string表示重写url
+	 */
+	onBreadLineClick : function(moduId, moduCode, url) {
+	},
+	
+	clickBreadLine : function() {
+		var moduCode = this.id.substring(this.id.lastIndexOf('_')+1);
+		var s = this.id.substring(0, this.id.lastIndexOf('_'));
+		var moduId = s.substring(s.lastIndexOf('_')+1);
+		
+		var url = ContextPath + "/dispatch/mi/" + moduId;
+		var ba = CC.onBreadLineClick(moduId, moduCode, url);
+		if(ba === false) return ;
+		if(!CU.isEmpty(ba) && typeof(ba)=="string") url = ba;
+		window.location = url;
+	},
+	
+	refreshBreadLineLinks : function() {
+		var links = $("#BS_BREAD_LINE").find("a");
+		if(!CU.isEmpty(links) && links.length>0) {
+			for(var i=0; i<links.length; i++) {
+				var m = $(links[i]);
+				var aid = m.prop("id");
+				if(!CU.isEmpty(aid) && aid.indexOf("BS_BREAD_LINE_LINK_")==0) {
+					m.bind("click", CC.clickBreadLine);
+				}
+			}
+		}
+	},
+	
+	getParentLayoutBorder : function() {
+		var w = PRQ.get("ParentLeftWidth");
+		var h = PRQ.get("ParentHeaderHeight");
+		if(CU.isEmpty(w)) {
+			w = cookie.get("ParentLeftWidth");
+			if(CU.isEmpty(w)) w = "0";
+		}else {
+			cookie.put("ParentLeftWidth", w);
+		}
+		if(CU.isEmpty(h)) {
+			h = cookie.get("ParentHeaderHeight");
+			if(CU.isEmpty(h)) h = "0";
+		}else {
+			cookie.put("ParentHeaderHeight", h);
+		}
+		return {width:parseInt(w,10),height:parseInt(h,10)};
 	}
 };
+
 
 
 </script>
