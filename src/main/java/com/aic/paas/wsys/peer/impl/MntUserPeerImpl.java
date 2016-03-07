@@ -61,7 +61,7 @@ public class MntUserPeerImpl implements MntUserPeer {
 	
 	
 	@Override
-	public Page<SysOp> queryOpPage(Integer pageNum, Integer pageSize, CSysOp cdt, String orders) {
+	public Page<SysOp> queryOpPageByOrg(Integer pageNum, Integer pageSize, CSysOp cdt, String orders) {
 		if(cdt == null) cdt = new CSysOp();
 		cdt.setOpKind(2);
 		PaasWebSsoLoginUser user = (PaasWebSsoLoginUser)SystemUtil.getLoginUser();

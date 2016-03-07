@@ -49,7 +49,7 @@ public class MntUserMvc {
 	 */
 	@RequestMapping("/queryOpPage")
 	public void queryOpPage(HttpServletRequest request, HttpServletResponse response, Integer pageNum, Integer pageSize, CSysOp cdt, String orders){
-		Page<SysOp> page = mntUserPeer.queryOpPage(pageNum, pageSize, cdt, orders);
+		Page<SysOp> page = mntUserPeer.queryOpPageByOrg(pageNum, pageSize, cdt, orders);
 		ControllerUtils.returnJson(request, response, page);
 	}
 	

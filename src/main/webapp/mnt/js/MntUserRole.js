@@ -59,7 +59,7 @@ function query(pageNum){
 	var pageSize = $("#grid_pageSize").val();
 	var opCode = $("#cdtOpCode").val();
 	var opName = $("#cdtOpName").val();
-	var orders = "OP_CODE";
+	var orders = "ID desc";
 	
 	var ps = {pageNum:pageNum,pageSize:pageSize,opCode:opCode,opName:opName,orders:orders};
 	RS.ajax({url:"/mnt/user/queryOpInfoPage",ps:ps,cb:function(r) {

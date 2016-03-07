@@ -399,6 +399,9 @@ function ProjectUtils() {
 		var ls = DROP[def];
 		if(!CU.isEmpty(ls)) {
 			for(var i=0; i<ls.length; i++) {
+				if(ls[i].name=="&nbsp;"){
+					ls[i].name="全部";
+				}
 				html.push("<option value=\""+ls[i].code+"\">"+ls[i].name+"</option>");
 			}
 		}
