@@ -22,7 +22,7 @@ public interface MntUserPeer {
 	 * @param orders : 排序字段, 多字段以逗号分隔
 	 * @return 操作员表[SYS_OP]分页列表对象
 	 */
-	public Page<SysOp> queryOpPage(Integer pageNum, Integer pageSize, CSysOp cdt, String orders);
+	public Page<SysOp> queryOpPageByOrg(Integer pageNum, Integer pageSize, CSysOp cdt, String orders);
 
 
 	/**
