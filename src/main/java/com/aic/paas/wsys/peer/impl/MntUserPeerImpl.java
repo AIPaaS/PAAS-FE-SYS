@@ -161,6 +161,7 @@ public class MntUserPeerImpl implements MntUserPeer {
 	public List<SysRole> querySysRoleList(CSysRole cdt, String orders) {
 		if(cdt == null) cdt = new CSysRole();
 		cdt.setRoleType(2);		//1=平台角色    2=租户角色
+		cdt.setStatus(1);       //1=状态正常    0=停用
 		return sysRoleSvc.queryList(cdt, orders);
 	}
 	
