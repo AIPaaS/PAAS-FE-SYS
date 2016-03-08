@@ -32,18 +32,18 @@ String ContextPath = request.getContextPath();
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="loginPasswd" class="col-lg-2 control-label">登录密码:</label>
+				<label for="loginPasswd" class="col-lg-2 control-label">登录密码<font color="red">*</font>:</label>
 				<div class="col-lg-5">
-					<input type="password" name="loginPasswd" class="form-control" id="loginPasswd" pattern=".{6,32}" placeholder="">
+					<input type="password" name="loginPasswd" class="form-control" id="loginPasswd" pattern=".{6,32}"  required placeholder="">
 				</div>
 				<div class="col-lg-5">
 					<span>6-32位</span>
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="loginPasswd2" class="col-lg-2 control-label">密码确认:</label>
+				<label for="loginPasswd2" class="col-lg-2 control-label">密码确认<font color="red">*</font>:</label>
 				<div class="col-lg-5">
-					<input type="password" name="loginPasswd2" class="form-control" id="loginPasswd2" pattern=".{6,32}" placeholder="">
+					<input type="password" name="loginPasswd2" class="form-control" id="loginPasswd2" pattern=".{6,32}"  required placeholder="">
 				</div>
 				<div class="col-lg-5">
 				</div>
@@ -60,7 +60,7 @@ String ContextPath = request.getContextPath();
 			<div class="form-group">
 				<label for="mobileNo" class="col-lg-2 control-label">手机号:</label>
 				<div class="col-lg-5">
-					<input type="text" name="mobileNo" class="form-control" id="mobileNo" pattern=".{1,20}" placeholder="">
+					<input type="text" name="mobileNo" class="form-control" id="mobileNo" maxlength="11" pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$" required="required" placeholder="">
 				</div>
 				<div class="col-lg-5">
 				</div>
