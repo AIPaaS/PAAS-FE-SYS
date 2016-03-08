@@ -62,7 +62,7 @@ function query(pageNum){
 			for(var i=0; i<data.length; i++) {
 				CurrDataMap["key_"+data[i].id] = data[i];
 			}
-			CurrentPageNum = r.pageNum;
+			CurrentPageNum = r.pageNum; 
 			
 			$("#ul_pagination").twbsPagination({
 		        totalPages: r.totalPages?r.totalPages:1,
