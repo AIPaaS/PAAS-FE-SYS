@@ -53,7 +53,7 @@ function query(pageNum){
 	var pageSize = $("#grid_pageSize").val();
 	var opCode = $("#cdtOpCode").val();
 	var opName = $("#cdtOpName").val();
-	var orders = "OP_CODE";
+	var orders = "id desc";
 	
 	var ps = {pageNum:pageNum,pageSize:pageSize,opCode:opCode,opName:opName,orders:orders};
 	RS.ajax({url:"/mnt/user/queryOpPage",ps:ps,cb:function(r) {
@@ -62,7 +62,7 @@ function query(pageNum){
 			for(var i=0; i<data.length; i++) {
 				CurrDataMap["key_"+data[i].id] = data[i];
 			}
-			CurrentPageNum = r.pageNum;
+			CurrentPageNum = r.pageNum; 
 			
 			$("#ul_pagination").twbsPagination({
 		        totalPages: r.totalPages?r.totalPages:1,

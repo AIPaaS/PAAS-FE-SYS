@@ -140,7 +140,7 @@ public class MntUserPeerImpl implements MntUserPeer {
 		List<SysOp> ls = sysOpSvc.queryListByOrg(orgId, null, null, cdt, null);
 		
 		if(ls.size()>0 && (id==null || ls.size()>1 || ls.get(0).getId().longValue()!=id.longValue())) {
-			throw new ServiceException(" is exists code '"+code+"'! ");
+			throw new ServiceException(" 用户代码： '"+code+"'已存在! ");
 		}
 		
 		return merchentSvc.saveOrUpdateUser(mntId, record);
@@ -162,6 +162,7 @@ public class MntUserPeerImpl implements MntUserPeer {
 	public List<SysRole> querySysRoleList(CSysRole cdt, String orders) {
 		if(cdt == null) cdt = new CSysRole();
 		cdt.setRoleType(2);		//1=平台角色    2=租户角色
+		cdt.setStatus(1);       //1=状态正常    0=停用
 		return sysRoleSvc.queryList(cdt, orders);
 	}
 	
