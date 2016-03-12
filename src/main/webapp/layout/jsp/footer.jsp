@@ -44,6 +44,8 @@
 </body>
 <script type="text/javascript">
 $(document).ready(function() {
+	CC.refreshBreadLineLinks();
+	CC.getParentLayoutBorder();
 	init();
 });
 </script>
