@@ -60,7 +60,7 @@ String ContextPath = request.getContextPath();
 			<div class="form-group">
 				<label for="mobileNo" class="col-lg-2 control-label">手机号:</label>
 				<div class="col-lg-5">
-					<input type="text" name="mobileNo" class="form-control" id="mobileNo" maxlength="11" pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$" required="required" placeholder="">
+					<input type="text" name="mobileNo" class="form-control" id="mobileNo" maxlength="11" pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$" placeholder="">
 				</div>
 				<div class="col-lg-5">
 				</div>

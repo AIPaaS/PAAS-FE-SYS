@@ -40,9 +40,8 @@ function initFace() {
 }
 function queryInfo(){
 	RS.ajax({url:"/mnt/user/queryOpById",ps:{id:CurrentId},cb:function(result) {
-		result.loginPasswd = "";
 		PU.setFormData(result, "form_op");
-		
+		$("#loginPasswd2").val(result.loginPasswd);
 		var status = result.status;
 		$("#status1").prop("checked", status==1);
 		$("#status0").prop("checked", status==0);

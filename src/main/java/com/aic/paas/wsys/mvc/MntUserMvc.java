@@ -19,6 +19,7 @@ import com.aic.paas.frame.cross.bean.SysRole;
 import com.aic.paas.frame.cross.integration.RoleAuth;
 import com.aic.paas.frame.util.ComponentUtil;
 import com.aic.paas.wsys.peer.MntUserPeer;
+import com.binary.core.encrypt.EncryptAES;
 import com.binary.core.lang.Conver;
 import com.binary.core.util.BinaryUtils;
 import com.binary.framework.util.ControllerUtils;
@@ -112,6 +113,7 @@ public class MntUserMvc {
 	@RequestMapping("/queryOpById")
 	public void queryOpById(HttpServletRequest request, HttpServletResponse response,Long id){
 		SysOp sysOp = mntUserPeer.queryOpById(id);
+		sysOp.setLoginPasswd(EncryptAES.decrypt(sysOp.getLoginPasswd()));
 		ControllerUtils.returnJson(request, response, sysOp);
 	}
 	
